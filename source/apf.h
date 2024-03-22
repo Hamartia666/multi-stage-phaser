@@ -33,6 +33,8 @@ public:
 			enabled = true;
 	};
 
+	bool isEnabled() { return enabled; };
+
 private:
 	const double minFrequency = 40;
 	const double maxFrequency = 10000;

@@ -6,6 +6,9 @@
 
 #include "public.sdk/source/vst/vstaudioeffect.h"
 
+#include "lfo.h"
+#include "apf.h"
+
 namespace HonoursProject {
 
 //------------------------------------------------------------------------
@@ -50,6 +53,9 @@ public:
 
 //------------------------------------------------------------------------
 protected:
+	LowFrequencyOscillator lfo[3] = { LowFrequencyOscillator(), LowFrequencyOscillator(), LowFrequencyOscillator() };
+	AllPassFilter apf[3] = { AllPassFilter(), AllPassFilter(), AllPassFilter() };
+	float mix = 1.0f;
 
 };
 

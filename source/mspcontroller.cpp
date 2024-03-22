@@ -29,21 +29,21 @@ tresult PLUGIN_API MultiStagePhaserController::initialize (FUnknown* context)
 	parameters.addParameter(STR16("Mix"), nullptr, 0, 1.0f, Vst::ParameterInfo::kCanAutomate, mixId);
 	parameters.addParameter(STR16("Stage 1 LFO Frequency"), nullptr, 0, 0.0f, Vst::ParameterInfo::kCanAutomate, lfo1FreqId);
 	parameters.addParameter(STR16("Stage 1 LFO Depth"), nullptr, 0, 0.0f, Vst::ParameterInfo::kCanAutomate, lfo1AmpId);
-	parameters.addParameter(STR16("Stage 1 LFO Movement"), nullptr, 0, 0.0f, Vst::ParameterInfo::kCanAutomate, lfo1InvertId);
-	parameters.addParameter(STR16("Stage 1 APF Frequency"), nullptr, 0, 0.0f, Vst::ParameterInfo::kCanAutomate, apf1FreqId);
-	parameters.addParameter(STR16("Stage 1 Toggle"), nullptr, 0, 0.0f, Vst::ParameterInfo::kCanAutomate, apf1ToggleId);
+	parameters.addParameter(STR16("Stage 1 LFO Movement"), nullptr, 1, 0.0f, Vst::ParameterInfo::kCanAutomate, lfo1InvertId);
+	parameters.addParameter(STR16("Stage 1 APF Frequency"), nullptr, 0, 0.8f, Vst::ParameterInfo::kCanAutomate, apf1FreqId);
+	parameters.addParameter(STR16("Stage 1 Toggle"), nullptr, 1, 1.0f, Vst::ParameterInfo::kCanAutomate, apf1ToggleId);
 
 	parameters.addParameter(STR16("Stage 2 LFO Frequency"), nullptr, 0, 0.0f, Vst::ParameterInfo::kCanAutomate, lfo2FreqId);
 	parameters.addParameter(STR16("Stage 2 LFO Depth"), nullptr, 0, 0.0f, Vst::ParameterInfo::kCanAutomate, lfo2AmpId);
-	parameters.addParameter(STR16("Stage 2 LFO Movement"), nullptr, 0, 0.0f, Vst::ParameterInfo::kCanAutomate, lfo2InvertId);
-	parameters.addParameter(STR16("Stage 2 APF Frequency"), nullptr, 0, 0.0f, Vst::ParameterInfo::kCanAutomate, apf2FreqId);
-	parameters.addParameter(STR16("Stage 2 Toggle"), nullptr, 0, 0.0f, Vst::ParameterInfo::kCanAutomate, apf2ToggleId);
+	parameters.addParameter(STR16("Stage 2 LFO Movement"), nullptr, 1, 0.0f, Vst::ParameterInfo::kCanAutomate, lfo2InvertId);
+	parameters.addParameter(STR16("Stage 2 APF Frequency"), nullptr, 0, 0.5f, Vst::ParameterInfo::kCanAutomate, apf2FreqId);
+	parameters.addParameter(STR16("Stage 2 Toggle"), nullptr, 1, 1.0f, Vst::ParameterInfo::kCanAutomate, apf2ToggleId);
 
-	parameters.addParameter(STR16("Stage 2 LFO Frequency"), nullptr, 0, 0.0f, Vst::ParameterInfo::kCanAutomate, lfo3FreqId);
-	parameters.addParameter(STR16("Stage 2 LFO Depth"), nullptr, 0, 0.0f, Vst::ParameterInfo::kCanAutomate, lfo3AmpId);
-	parameters.addParameter(STR16("Stage 2 LFO Movement"), nullptr, 0, 0.0f, Vst::ParameterInfo::kCanAutomate, lfo3InvertId);
-	parameters.addParameter(STR16("Stage 2 APF Frequency"), nullptr, 0, 0.0f, Vst::ParameterInfo::kCanAutomate, apf3FreqId);
-	parameters.addParameter(STR16("Stage 2 Toggle"), nullptr, 0, 0.0f, Vst::ParameterInfo::kCanAutomate, apf3ToggleId);
+	parameters.addParameter(STR16("Stage 3 LFO Frequency"), nullptr, 0, 0.0f, Vst::ParameterInfo::kCanAutomate, lfo3FreqId);
+	parameters.addParameter(STR16("Stage 3 LFO Depth"), nullptr, 0, 0.0f, Vst::ParameterInfo::kCanAutomate, lfo3AmpId);
+	parameters.addParameter(STR16("Stage 3 LFO Movement"), nullptr, 1, 0.0f, Vst::ParameterInfo::kCanAutomate, lfo3InvertId);
+	parameters.addParameter(STR16("Stage 3 APF Frequency"), nullptr, 0, 0.2f, Vst::ParameterInfo::kCanAutomate, apf3FreqId);
+	parameters.addParameter(STR16("Stage 3 Toggle"), nullptr, 1, 1.0f, Vst::ParameterInfo::kCanAutomate, apf3ToggleId);
 
 
 	return result;
