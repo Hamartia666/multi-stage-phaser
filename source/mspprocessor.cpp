@@ -96,13 +96,13 @@ tresult PLUGIN_API MultiStagePhaserProcessor::process (Vst::ProcessData& data)
 						lfo[0].setOscillationAmplitude((float)value);
 						break;
 					case lfo1InvertId:
-						lfo[0].setOscillationAmplitude((float)value);
+						lfo[0].setInversion((float)value);
 						break;
 					case apf1FreqId:
 						apf[0].setCornerFrequency((float)value);
 						break;
 					case apf1ToggleId:
-						lfo[0].setOscillationAmplitude((float)value);
+						apf[0].setEnable((float)value);
 						break;
 					case lfo2FreqId:
 						lfo[1].setOscillationFrequency((float)value);
@@ -111,13 +111,13 @@ tresult PLUGIN_API MultiStagePhaserProcessor::process (Vst::ProcessData& data)
 						lfo[1].setOscillationAmplitude((float)value);
 						break;
 					case lfo2InvertId:
-						lfo[1].setOscillationAmplitude((float)value);
+						lfo[1].setInversion((float)value);
 						break;
 					case apf2FreqId:
 						apf[1].setCornerFrequency((float)value);
 						break;
 					case apf2ToggleId:
-						lfo[1].setOscillationAmplitude((float)value);
+						apf[1].setEnable((float)value);
 						break;
 					case lfo3FreqId:
 						lfo[2].setOscillationFrequency((float)value);
@@ -126,13 +126,13 @@ tresult PLUGIN_API MultiStagePhaserProcessor::process (Vst::ProcessData& data)
 						lfo[2].setOscillationAmplitude((float)value);
 						break;
 					case lfo3InvertId:
-						lfo[2].setOscillationAmplitude((float)value);
+						lfo[2].setInversion((float)value);
 						break;
 					case apf3FreqId:
 						apf[2].setCornerFrequency((float)value);
 						break;
 					case apf3ToggleId:
-						lfo[2].setOscillationAmplitude((float)value);
+						apf[2].setEnable((float)value);
 						break;
 					}
 				}
