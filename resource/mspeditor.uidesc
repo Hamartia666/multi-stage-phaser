@@ -3,7 +3,12 @@
 		"version": "1",
 		"bitmaps": {},
 		"fonts": {},
-		"colors": {},
+		"colors": {
+			"DarkGreyColor": "#242331ff",
+			"Grey": "#7c7c7cff",
+			"IceBlue": "#9cf6f6ff"
+		},
+		"gradients": {},
 		"control-tags": {
 			"Mix": "0",
 			"Stage1APFFrequency": "4",
@@ -42,7 +47,7 @@
 				"SplitViewSize_1_1": "0.5098360655737704805190446677443105727434",
 				"SplitViewSize_2_0": "0.7180650037792895012955796119058504700661",
 				"SplitViewSize_2_1": "0.278155706727135298983455413690535351634",
-				"TabSwitchValue": "0",
+				"TabSwitchValue": "2",
 				"Version": "1"
 			},
 			"UIAttributesController": {},
@@ -51,12 +56,18 @@
 			},
 			"UITagsDataSource": {
 				"SelectedRow": "-1"
+			},
+			"UIColorsDataSource": {
+				"SelectedRow": "1"
+			},
+			"UIGradientsDataSource": {
+				"SelectedRow": "-1"
 			}
 		},
 		"templates": {
 			"view": {
 				"attributes": {
-					"background-color": "~ BlackCColor",
+					"background-color": "DarkGreyColor",
 					"background-color-draw-style": "filled and stroked",
 					"class": "CViewContainer",
 					"mouse-enabled": "true",
@@ -69,7 +80,7 @@
 				"children": {
 					"CViewContainer": {
 						"attributes": {
-							"background-color": "~ GreyCColor",
+							"background-color": "Grey",
 							"background-color-draw-style": "filled and stroked",
 							"class": "CViewContainer",
 							"mouse-enabled": "true",
@@ -100,7 +111,7 @@
 											"circle-drawing": "false",
 											"class": "CKnob",
 											"control-tag": "Stage1LFODepth",
-											"corona-color": "~ CyanCColor",
+											"corona-color": "IceBlue",
 											"corona-dash-dot": "false",
 											"corona-dash-dot-lengths": "1.26,0.1",
 											"corona-drawing": "true",
@@ -135,7 +146,7 @@
 											"circle-drawing": "false",
 											"class": "CKnob",
 											"control-tag": "Stage1LFOFrequency",
-											"corona-color": "~ CyanCColor",
+											"corona-color": "IceBlue",
 											"corona-dash-dot": "false",
 											"corona-dash-dot-lengths": "1.26,0.1",
 											"corona-drawing": "true",
@@ -279,7 +290,7 @@
 											"autosize-to-fit": "false",
 											"boxfill-color": "~ BlackCColor",
 											"boxframe-color": "~ BlackCColor",
-											"checkmark-color": "~ CyanCColor",
+											"checkmark-color": "IceBlue",
 											"class": "CCheckBox",
 											"control-tag": "Stage1LFOMovement",
 											"default-value": "0",
@@ -359,7 +370,7 @@
 											"circle-drawing": "false",
 											"class": "CKnob",
 											"control-tag": "Stage1APFFrequency",
-											"corona-color": "~ CyanCColor",
+											"corona-color": "IceBlue",
 											"corona-dash-dot": "false",
 											"corona-dash-dot-lengths": "1.26,0.1",
 											"corona-drawing": "true",
@@ -505,7 +516,7 @@
 									"autosize-to-fit": "false",
 									"boxfill-color": "~ BlackCColor",
 									"boxframe-color": "~ BlackCColor",
-									"checkmark-color": "~ CyanCColor",
+									"checkmark-color": "IceBlue",
 									"class": "CCheckBox",
 									"control-tag": "Stage1Toggle",
 									"default-value": "1",
@@ -530,7 +541,7 @@
 					},
 					"CViewContainer": {
 						"attributes": {
-							"background-color": "~ GreyCColor",
+							"background-color": "Grey",
 							"background-color-draw-style": "filled and stroked",
 							"class": "CViewContainer",
 							"mouse-enabled": "true",
@@ -620,7 +631,7 @@
 									"autosize-to-fit": "false",
 									"boxfill-color": "~ BlackCColor",
 									"boxframe-color": "~ BlackCColor",
-									"checkmark-color": "~ CyanCColor",
+									"checkmark-color": "IceBlue",
 									"class": "CCheckBox",
 									"control-tag": "Stage2Toggle",
 									"default-value": "1",
@@ -735,7 +746,7 @@
 											"circle-drawing": "false",
 											"class": "CKnob",
 											"control-tag": "Stage2APFFrequency",
-											"corona-color": "~ CyanCColor",
+											"corona-color": "IceBlue",
 											"corona-dash-dot": "false",
 											"corona-dash-dot-lengths": "1.26,0.1",
 											"corona-drawing": "true",
@@ -820,7 +831,7 @@
 											"autosize-to-fit": "false",
 											"boxfill-color": "~ BlackCColor",
 											"boxframe-color": "~ BlackCColor",
-											"checkmark-color": "~ CyanCColor",
+											"checkmark-color": "IceBlue",
 											"class": "CCheckBox",
 											"control-tag": "Stage2LFOMovement",
 											"default-value": "0",
@@ -848,7 +859,7 @@
 											"circle-drawing": "false",
 											"class": "CKnob",
 											"control-tag": "Stage2LFODepth",
-											"corona-color": "~ CyanCColor",
+											"corona-color": "IceBlue",
 											"corona-dash-dot": "false",
 											"corona-dash-dot-lengths": "1.26,0.1",
 											"corona-drawing": "true",
@@ -883,7 +894,7 @@
 											"circle-drawing": "false",
 											"class": "CKnob",
 											"control-tag": "Stage2LFOFrequency",
-											"corona-color": "~ CyanCColor",
+											"corona-color": "IceBlue",
 											"corona-dash-dot": "false",
 											"corona-dash-dot-lengths": "1.26,0.1",
 											"corona-drawing": "true",
@@ -991,7 +1002,7 @@
 					},
 					"CViewContainer": {
 						"attributes": {
-							"background-color": "~ GreyCColor",
+							"background-color": "Grey",
 							"background-color-draw-style": "filled and stroked",
 							"class": "CViewContainer",
 							"mouse-enabled": "true",
@@ -1081,7 +1092,7 @@
 									"autosize-to-fit": "false",
 									"boxfill-color": "~ BlackCColor",
 									"boxframe-color": "~ BlackCColor",
-									"checkmark-color": "~ CyanCColor",
+									"checkmark-color": "IceBlue",
 									"class": "CCheckBox",
 									"control-tag": "Stage3Toggle",
 									"default-value": "1",
@@ -1196,7 +1207,7 @@
 											"circle-drawing": "false",
 											"class": "CKnob",
 											"control-tag": "Stage3APFFrequency",
-											"corona-color": "~ CyanCColor",
+											"corona-color": "IceBlue",
 											"corona-dash-dot": "false",
 											"corona-dash-dot-lengths": "1.26,0.1",
 											"corona-drawing": "true",
@@ -1320,7 +1331,7 @@
 											"circle-drawing": "false",
 											"class": "CKnob",
 											"control-tag": "Stage3LFODepth",
-											"corona-color": "~ CyanCColor",
+											"corona-color": "IceBlue",
 											"corona-dash-dot": "false",
 											"corona-dash-dot-lengths": "1.26,0.1",
 											"corona-drawing": "true",
@@ -1392,7 +1403,7 @@
 											"circle-drawing": "false",
 											"class": "CKnob",
 											"control-tag": "Stage3LFOFrequency",
-											"corona-color": "~ CyanCColor",
+											"corona-color": "IceBlue",
 											"corona-dash-dot": "false",
 											"corona-dash-dot-lengths": "1.26,0.1",
 											"corona-drawing": "true",
@@ -1425,13 +1436,13 @@
 											"autosize-to-fit": "false",
 											"boxfill-color": "~ BlackCColor",
 											"boxframe-color": "~ BlackCColor",
-											"checkmark-color": "~ CyanCColor",
+											"checkmark-color": "IceBlue",
 											"class": "CCheckBox",
 											"control-tag": "Stage3LFOMovement",
 											"default-value": "0",
 											"draw-crossbox": "false",
 											"font": "~ NormalFontVeryBig",
-											"font-color": "~ WhiteCColor",
+											"font-color": "~ BlackCColor",
 											"frame-width": "2",
 											"max-value": "1",
 											"min-value": "0",
@@ -1452,7 +1463,7 @@
 					},
 					"CViewContainer": {
 						"attributes": {
-							"background-color": "~ GreyCColor",
+							"background-color": "Grey",
 							"background-color-draw-style": "filled and stroked",
 							"class": "CViewContainer",
 							"mouse-enabled": "true",
@@ -1465,7 +1476,7 @@
 						"children": {
 							"CTextLabel": {
 								"attributes": {
-									"back-color": "~ CyanCColor",
+									"back-color": "IceBlue",
 									"background-offset": "0, 0",
 									"class": "CTextLabel",
 									"default-value": "0.5",
@@ -1507,7 +1518,7 @@
 									"circle-drawing": "false",
 									"class": "CKnob",
 									"control-tag": "Mix",
-									"corona-color": "~ CyanCColor",
+									"corona-color": "IceBlue",
 									"corona-dash-dot": "false",
 									"corona-dash-dot-lengths": "1.26,0.1",
 									"corona-drawing": "true",
@@ -1539,7 +1550,7 @@
 					},
 					"CViewContainer": {
 						"attributes": {
-							"background-color": "~ GreyCColor",
+							"background-color": "Grey",
 							"background-color-draw-style": "filled and stroked",
 							"class": "CViewContainer",
 							"mouse-enabled": "true",
@@ -1603,7 +1614,7 @@
 									"opacity": "1",
 									"origin": "20, 40",
 									"round-rect-radius": "6",
-									"shadow-color": "~ CyanCColor",
+									"shadow-color": "IceBlue",
 									"size": "120, 40",
 									"style-3D-in": "false",
 									"style-3D-out": "false",
@@ -1640,7 +1651,7 @@
 									"opacity": "1",
 									"origin": "20, 70",
 									"round-rect-radius": "6",
-									"shadow-color": "~ CyanCColor",
+									"shadow-color": "IceBlue",
 									"size": "120, 40",
 									"style-3D-in": "false",
 									"style-3D-out": "false",
