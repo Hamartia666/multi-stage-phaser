@@ -41,7 +41,7 @@ private:
 	float oscillationAmplitude = 1.0f;
 	bool invertMovement = false;
 
-	const float maxAmplitude = 1.0f;
+	const float maxAmplitude = 0.35f;
 	const float minAmplitude = 0.0f;
 	const double maxFrequency = 6.0f;
 	const double minFrequency = 0.0f;

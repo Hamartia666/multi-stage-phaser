@@ -148,27 +148,28 @@ tresult PLUGIN_API MultiStagePhaserProcessor::process (Vst::ProcessData& data)
 	Vst::Sample32** in = data.inputs[0].channelBuffers32;
 	Vst::Sample32** out = data.outputs[0].channelBuffers32;
 
-	float blend = mix * 0.5f;
-
 	for (int32 ch = 0; ch < numOfChannels; ++ch)
 	{
 		Vst::Sample32* ptrIn = in[ch];
 		Vst::Sample32* ptrOut = out[ch];
 		Vst::Sample32 temp;
+		Vst::Sample32 stageTemp;
 		for (int32 i = 0; i < data.numSamples; ++i)
 		{
 			temp = *ptrIn;
 			float oscillatorValue = 0.0f;
 			for (int stage = 0; stage < 3; ++stage)
 			{
+				stageTemp = temp;
 				if (apf[stage].isEnabled())
 				{
 					oscillatorValue = lfo[stage].next(ch);
 					apf[stage].setNewOscillatorValue(oscillatorValue);
-					temp = apf[stage].processSample(temp, ch);
-				}		
+					stageTemp = apf[stage].processSample(temp, ch);
+				}
+				temp = (stageTemp * 0.5f) + temp * (1.0f - 0.5f);
 			}
-			temp = (temp * blend) + *ptrIn * (1 - blend);
+			temp = (temp * mix) + *ptrIn * (1 - mix);
 
 			*ptrOut = temp;
 
