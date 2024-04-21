@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Repositories\vst-multi-stage-phaser\MultiStagePhaser\build\CMakeFiles\3674a8176b434d0da81b9e1f511e5e8e\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{8986881B-42E0-3954-AD03-E3A3866C4E6A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

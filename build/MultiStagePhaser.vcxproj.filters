@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Repositories\vst-multi-stage-phaser\MultiStagePhaser\source\mspprocessor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Repositories\vst-multi-stage-phaser\MultiStagePhaser\source\mspcontroller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Repositories\vst-multi-stage-phaser\MultiStagePhaser\source\mspentry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Installs\VST SDK\VST_SDK\vst3sdk\public.sdk\source\main\dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\lfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\apf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Repositories\vst-multi-stage-phaser\MultiStagePhaser\source\version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Repositories\vst-multi-stage-phaser\MultiStagePhaser\source\mspcids.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Repositories\vst-multi-stage-phaser\MultiStagePhaser\source\mspprocessor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Repositories\vst-multi-stage-phaser\MultiStagePhaser\source\mspcontroller.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\params.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\lfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\apf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Repositories\vst-multi-stage-phaser\MultiStagePhaser\resource\mspeditor.uidesc" />
+    <CustomBuild Include="D:\Repositories\vst-multi-stage-phaser\MultiStagePhaser\resource\B7059340298756BB9553DCDB2EE72454_snapshot.png">
+      <Filter>Resources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Repositories\vst-multi-stage-phaser\MultiStagePhaser\resource\B7059340298756BB9553DCDB2EE72454_snapshot_2.0x.png">
+      <Filter>Resources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Repositories\vst-multi-stage-phaser\MultiStagePhaser\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="D:\Repositories\vst-multi-stage-phaser\MultiStagePhaser\resource\win32resource.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{E80A3A0E-C832-3983-80DA-085CB91D5B56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{110349EF-FA3C-3CA0-8E2F-4B4E3F5AB16A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{6422D3F8-D4CE-3477-8494-ACD6773453C1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
